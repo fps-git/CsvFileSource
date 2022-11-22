@@ -1,0 +1,13 @@
+TestName:Amount:Registered:Expected
+Registered user, bonus under limit:1000:true:30
+Registered user, bonus over limit:1000000:true:500
+Unregistered user, bonus under limit:40000:false:400
+Unregistered user, bonus over limit:1000000:false:500
+Registered user, bonus close to limit:16666:true:499
+Unregistered user, bonus equals limit:50000:false:500
+Unregistered user, bonus close down to limit:50001:false:500
+Unregistered user, bonus close up to limit:49999:false:499
+Unregistered user, bonus close to zero:30:false:0
+Registered user, bonus close to one:33:true:0
+Registered user, zero amount:0:true:0
+Registered user, subzero amount:-1000:true:0
